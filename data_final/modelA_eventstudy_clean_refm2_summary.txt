@@ -1,0 +1,64 @@
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:           inverse_rank   R-squared:                       0.244
+Model:                            OLS   Adj. R-squared:                  0.232
+Method:                 Least Squares   F-statistic:                     122.5
+Date:                Sat, 08 Nov 2025   Prob (F-statistic):          3.36e-298
+Time:                        12:33:16   Log-Likelihood:                -11260.
+No. Observations:                2394   AIC:                         2.260e+04
+Df Residuals:                    2355   BIC:                         2.282e+04
+Df Model:                          38                                         
+Covariance Type:              cluster                                         
+=============================================================================================================================
+                                                                coef    std err          z      P>|z|      [0.025      0.975]
+-----------------------------------------------------------------------------------------------------------------------------
+Intercept                                                   -53.1268     14.363     -3.699      0.000     -81.278     -24.976
+C(event_time_k_centered, Treatment(reference=-2))[T.-6.0]    -1.7525      4.112     -0.426      0.670      -9.812       6.307
+C(event_time_k_centered, Treatment(reference=-2))[T.-5.0]     3.9951      4.205      0.950      0.342      -4.246      12.236
+C(event_time_k_centered, Treatment(reference=-2))[T.-4.0]     1.7700      4.443      0.398      0.690      -6.939      10.479
+C(event_time_k_centered, Treatment(reference=-2))[T.-3.0]     0.4393      4.422      0.099      0.921      -8.228       9.107
+C(event_time_k_centered, Treatment(reference=-2))[T.-1.0]     6.4527      4.240      1.522      0.128      -1.858      14.763
+C(event_time_k_centered, Treatment(reference=-2))[T.0.0]      6.3191      4.043      1.563      0.118      -1.606      14.244
+C(event_time_k_centered, Treatment(reference=-2))[T.1.0]      0.7367      3.972      0.185      0.853      -7.049       8.522
+C(event_time_k_centered, Treatment(reference=-2))[T.2.0]      0.4016      3.862      0.104      0.917      -7.169       7.972
+C(event_time_k_centered, Treatment(reference=-2))[T.3.0]      4.0983      3.864      1.061      0.289      -3.475      11.672
+C(event_time_k_centered, Treatment(reference=-2))[T.4.0]     -2.1740      3.774     -0.576      0.565      -9.570       5.222
+C(event_time_k_centered, Treatment(reference=-2))[T.5.0]     -2.9813      5.103     -0.584      0.559     -12.983       7.020
+C(event_time_k_centered, Treatment(reference=-2))[T.6.0]      0.0845      4.336      0.019      0.984      -8.414       8.583
+C(event_time_k_centered, Treatment(reference=-2))[T.7.0]     -2.2823      4.086     -0.559      0.576     -10.291       5.726
+C(event_time_k_centered, Treatment(reference=-2))[T.8.0]     -0.2427      3.875     -0.063      0.950      -7.837       7.352
+C(genre)[T.Blues]                                           -12.0809     15.973     -0.756      0.449     -43.387      19.225
+C(genre)[T.Children’s Music]                                 -5.0875      1.058     -4.809      0.000      -7.161      -3.014
+C(genre)[T.Classical]                                       -17.3254      9.217     -1.880      0.060     -35.390       0.739
+C(genre)[T.Country]                                           8.7254      4.228      2.064      0.039       0.438      17.012
+C(genre)[T.Dance]                                            12.7875      4.133      3.094      0.002       4.687      20.888
+C(genre)[T.Folk]                                            -11.6924      7.225     -1.618      0.106     -25.854       2.469
+C(genre)[T.Hip-Hop]                                           5.3170      5.100      1.042      0.297      -4.680      15.314
+C(genre)[T.Indie]                                           -14.0239      4.959     -2.828      0.005     -23.743      -4.305
+C(genre)[T.Jazz]                                            -38.3690      6.611     -5.804      0.000     -51.326     -25.412
+C(genre)[T.Pop]                                              12.1662      3.568      3.409      0.001       5.172      19.160
+C(genre)[T.R&B]                                               8.3107      4.305      1.930      0.054      -0.127      16.749
+C(genre)[T.Rap]                                               8.4808      3.988      2.127      0.033       0.665      16.297
+C(genre)[T.Reggae]                                          -20.9097      4.957     -4.218      0.000     -30.626     -11.193
+C(genre)[T.Reggaeton]                                       -32.3323     10.450     -3.094      0.002     -52.813     -11.852
+C(genre)[T.Rock]                                             -0.4362      2.984     -0.146      0.884      -6.286       5.413
+C(genre)[T.Soul]                                             -0.8921      4.674     -0.191      0.849     -10.053       8.269
+C(genre)[T.World]                                            28.4377      5.346      5.320      0.000      17.960      38.915
+C(genre)[T.unknown]                                          -6.9077      3.765     -1.835      0.067     -14.286       0.471
+energy                                                       -2.0962      8.146     -0.257      0.797     -18.062      13.870
+danceability                                                 52.0686      9.824      5.300      0.000      32.814      71.323
+valence                                                      -8.2803      6.986     -1.185      0.236     -21.972       5.412
+tempo                                                        -0.0097      0.038     -0.259      0.795      -0.083       0.064
+duration_ms                                                5.666e-05   2.82e-05      2.009      0.045    1.38e-06       0.000
+artist_popularity                                             1.1948      0.118     10.092      0.000       0.963       1.427
+==============================================================================
+Omnibus:                       98.312   Durbin-Watson:                   1.219
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):               63.197
+Skew:                          -0.271   Prob(JB):                     1.89e-14
+Kurtosis:                       2.417   Cond. No.                     1.18e+07
+==============================================================================
+
+Notes:
+[1] Standard Errors are robust to cluster correlation (cluster)
+[2] The condition number is large, 1.18e+07. This might indicate that there are
+strong multicollinearity or other numerical problems.
