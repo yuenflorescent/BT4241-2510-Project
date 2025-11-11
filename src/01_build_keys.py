@@ -1,9 +1,10 @@
-# src/01_build_keys.py
 import sys
-import pandas as pd
-from rapidfuzz import process, fuzz
-from janitor import clean_names
 from pathlib import Path
+
+import pandas as pd
+from janitor import clean_names
+from rapidfuzz import fuzz, process
+
 from utils import norm  # text normalization helper
 
 RAW = Path("data_raw")
@@ -19,6 +20,23 @@ def pick(colnames, candidates, label):
     raise KeyError(f"[{label}] Expected one of {candidates}, found {list(colnames)}")
 
 
+def primary_genre_cell(x):
+    """Return a single primary genre label without converting NaN to 'nan'."""
+    if pd.isna(x):
+        return pd.NA
+    x = str(x)
+    for sep in [";", ",", "|", "/"]:
+        if sep in x:
+            return x.split(sep)[0].strip()
+    return x.strip()
+
+
+def mode_or_first(s: pd.Series):
+    s = s.dropna()
+    m = s.mode()
+    return m.iat[0] if not m.empty else (s.iloc[0] if len(s) else pd.NA)
+
+
 def main():
     print("➡️ Loading CSVs...")
     sp = pd.read_csv(RAW / "spotify_tracks.csv").pipe(clean_names)
@@ -28,19 +46,63 @@ def main():
 
     # Detect column names across possible variants
     sp_artist_col = pick(sp.columns, ["artist", "artists", "artist_name"], "spotify artist")
-    sp_track_col  = pick(sp.columns, ["track_name", "track_nam", "name", "track", "song"], "spotify track")
+    sp_track_col = pick(sp.columns, ["track_name", "track_nam", "name", "track", "song"], "spotify track")
     bb_artist_col = pick(bb.columns, ["artist", "artists", "artist_name"], "billboard artist")
-    bb_track_col  = pick(bb.columns, ["song", "track", "title", "track_name", "name"], "billboard track")
-    bb_date_col   = pick(bb.columns, ["date", "week", "week_date"], "billboard date")
-    bb_rank_col   = pick(bb.columns, ["rank", "position", "pos"], "billboard rank")
+    bb_track_col = pick(bb.columns, ["song", "track", "title", "track_name", "name"], "billboard track")
+    bb_date_col = pick(bb.columns, ["date", "week", "week_date"], "billboard date")
+    bb_rank_col = pick(bb.columns, ["rank", "position", "pos"], "billboard rank")
     print("   detected columns ✔")
 
     # Normalize keys used for matching
     print("➡️ Normalizing keys...")
     sp["artist_norm"] = sp[sp_artist_col].map(norm)
-    sp["track_norm"]  = sp[sp_track_col].map(norm)
+    sp["track_norm"] = sp[sp_track_col].map(norm)
     bb["artist_norm"] = bb[bb_artist_col].map(norm)
-    bb["track_norm"]  = bb[bb_track_col].map(norm)
+    bb["track_norm"] = bb[bb_track_col].map(norm)
+
+    # --- Deduplicate Spotify to one row per song --------------------------------
+    # Clean raw 'genre' text to a single primary label
+    if "genre" in sp.columns:
+        sp["genre"] = sp["genre"].map(primary_genre_cell)
+
+    # Build aggregation dynamically from available columns
+    agg = {}
+    # id / categorical-ish
+    if "track_id" in sp.columns:
+        agg["track_id"] = ("track_id", mode_or_first)
+    if "genre" in sp.columns:
+        agg["genre"] = ("genre", mode_or_first)
+    if "key" in sp.columns:
+        agg["key"] = ("key", mode_or_first)
+    if "time_signature" in sp.columns:
+        agg["time_signature"] = ("time_signature", mode_or_first)
+    if "mode" in sp.columns:
+        agg["mode"] = ("mode", mode_or_first)
+    if "explicit" in sp.columns:
+        agg["explicit"] = ("explicit", mode_or_first)
+
+    # numeric features (use mean/median as sensible)
+    for col in [
+        "artist_popularity",
+        "acousticness",
+        "danceability",
+        "duration_ms",
+        "energy",
+        "instrumentalness",
+        "liveness",
+        "loudness",
+        "speechiness",
+        "tempo",
+        "valence",
+    ]:
+        if col in sp.columns:
+            agg[col] = (col, "median" if col == "duration_ms" else "mean")
+
+    before_n = len(sp)
+    sp_one = sp.groupby(["artist_norm", "track_norm"], as_index=False).agg(**agg)
+    print(f"✅ Deduplicated Spotify rows: {before_n} → {len(sp_one)} unique songs")
+    sp = sp_one
+    # ---------------------------------------------------------------------------
 
     # Direct merge on normalized artist + track
     print("➡️ Direct merging...")
@@ -49,7 +111,7 @@ def main():
         sp[["artist_norm", "track_norm"] + cols_sp_keep],
         on=["artist_norm", "track_norm"],
         how="left",
-        indicator=True
+        indicator=True,
     )
     direct_rate = 100 * (m["_merge"] != "left_only").mean()
     print(f"   direct match rate: {direct_rate:.1f}%")
@@ -64,25 +126,27 @@ def main():
         # Build consistent 'key' and 'prefix' for Spotify candidates
         sp_map = sp.assign(
             key=(sp["artist_norm"].fillna("") + " - " + sp["track_norm"].fillna("")),
-            prefix=sp["artist_norm"].fillna("").str[:2] + "|" + sp["track_norm"].fillna("").str[:2]
+            prefix=sp["artist_norm"].fillna("").str[:2] + "|" + sp["track_norm"].fillna("").str[:2],
         )
 
-        # Candidate strings per prefix (do not rely on indexing quirks)
+        # Candidate strings per prefix
         cand_keys = {}
         for p, grp in sp_map.groupby("prefix"):
             cand_keys[p] = (grp["artist_norm"].fillna("") + " - " + grp["track_norm"].fillna("")).tolist()
 
         # Payload map: key -> {artist_norm, track_norm, ...features}
         payload_cols = ["artist_norm", "track_norm"] + add_cols
-        payload = {k: rec for k, rec in zip(
-            sp_map["key"].tolist(),
-            sp_map[payload_cols].to_dict("records")
-        )}
+        payload = {
+            k: rec
+            for k, rec in zip(sp_map["key"].tolist(), sp_map[payload_cols].to_dict("records"))
+        }
 
         # Same 'key' and 'prefix' for the unmatched Billboard rows
         unmatched = unmatched.assign(
             key=(unmatched["artist_norm"].fillna("") + " - " + unmatched["track_norm"].fillna("")),
-            prefix=unmatched["artist_norm"].fillna("").str[:2] + "|" + unmatched["track_norm"].fillna("").str[:2]
+            prefix=unmatched["artist_norm"].fillna("").str[:2]
+            + "|"
+            + unmatched["track_norm"].fillna("").str[:2],
         )
 
         rows = []
@@ -90,11 +154,9 @@ def main():
         for i, row in unmatched.iterrows():
             if i % 10000 == 0 and i > 0:
                 print(f"   processed {i:,}/{total:,} ...")
-
             cands = cand_keys.get(row["prefix"], [])
             if not cands:
                 continue
-
             match = process.extractOne(row["key"], cands, scorer=fuzz.token_sort_ratio)
             if match and match[1] >= 90:
                 k = match[0]
@@ -103,10 +165,16 @@ def main():
                     rows.append(info)
 
         if rows:
-            use_df = pd.DataFrame(rows)
-            # Drop any prior spotify columns before merging back to avoid duplicates
-            m = m.drop(columns=[c for c in add_cols if c in m.columns], errors="ignore")
-            m = m.merge(use_df, on=["artist_norm", "track_norm"], how="left")
+            use_df = pd.DataFrame(rows)  # contains artist_norm, track_norm, and add_cols
+
+            # Merge fuzzy payload with suffixes and fill only where still missing
+            m = m.merge(use_df, on=["artist_norm", "track_norm"], how="left", suffixes=("", "_fuzzy"))
+            for c in add_cols:
+                cf = f"{c}_fuzzy"
+                if cf in m.columns:
+                    m[c] = m[c].fillna(m[cf])
+                    m.drop(columns=[cf], inplace=True)
+
             print(f"   fuzzy matched (>=90): {len(use_df):,}")
         else:
             print("   no rows passed fuzzy threshold after blocking")
@@ -131,10 +199,25 @@ def main():
 
     # Save outputs
     print("➡️ Saving to data_interim/ ...")
+    m.drop(columns=["_merge"], inplace=True, errors="ignore")
     m.to_parquet(OUT / "billboard_spotify_weeks.parquet", index=False)
     peaks.to_parquet(OUT / "billboard_peaks.parquet", index=False)
     print("✅ Done. Files saved:")
     print("   -", OUT / "billboard_spotify_weeks.parquet")
+
+    # --- Optional validation for genre consistency ---
+    if "genre" in m.columns:
+        chk = (
+            m.groupby(["artist_norm", "track_norm"])["genre"]
+            .nunique(dropna=False)
+            .reset_index(name="n_genre")
+        )
+        bad = chk[chk["n_genre"] > 1]
+        if len(bad):
+            print(f"⚠️  {len(bad)} songs still show >1 genre (investigate in Step 02).")
+            print(bad.head(10))
+        else:
+            print("✅ Genre is one-to-one per song in merged weeks.")
     print("   -", OUT / "billboard_peaks.parquet")
 
 
