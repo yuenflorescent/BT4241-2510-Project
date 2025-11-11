@@ -1,0 +1,98 @@
+#,Song,Artist,Popularity,BPM,Genres,Parent Genres,Album,Album Date,Time,Dance,Energy,Acoustic,Instrumental,Happy,Speech,Live,Loud (Db),Key,Time Signature,Added At,Spotify Track Id,Album Label,Camelot,ISRC
+1,"What About Me","Shannon Noll",49,128,"","","That's What I'm Talking About",2004-02-02,03:21,61,44,68,0,26,0,10,-6,E,4,2021-11-04,3BUdRr4VGmNajx2wLWlGzl,"BMG Music",12B,AUBM00447806
+2,"Left Outside Alone","Anastacia",65,103,"","","Anastacia",2004-00-00,04:17,66,75,7,0,33,0,0,-4,D minor,4,2021-11-04,3xl7PsO7Hzuig6To9FgDm6,"Epic",7A,USSM10400150
+3,"Black Betty - Extended Version","Spiderbait",53,124,"","","B-Sides Collection",2017-02-17,04:16,47,88,0,61,44,0,10,-7,C,4,2021-11-04,3tiBuI6svprsuoeiJj7Q5H,"Universal Music Australia Pty. Ltd.",8B,AUUM00430015
+4,"Milkshake","Kelis",3,113,"","","Tasty",2003-12-05,03:02,88,77,1,3,76,0,20,-6,C♯/D♭,4,2021-11-04,2cMTIlktg3M9mXYqCPqw1J,"Virgin Records",3B,USAR10301131
+5,"Fuck It (I Don't Want You Back)","Eamon",67,69,"","","I Don't Want You Back",2004-01-23,03:45,83,65,21,0,57,0,0,-6,C minor,4,2021-11-04,1p5kC161fWMA2QlwV3Vi4W,"Jive",5A,USJI10300480
+6,"Superstar","Jamelia",1,110,"","","Thank You",2003-06-30,03:35,80,65,5,0,82,0,0,-7,C♯/D♭,4,2021-11-04,3oobWqIgYrSRg18uqRuPIF,"Woah Dad!",3B,GBAYE0202055
+7,"My Immortal","Evanescence",76,79,"alternative metal","Metal, Rock","Fallen",2003-03-04,04:22,19,27,86,0,10,0,10,-9,A,4,2021-11-04,4UzVcXufOhGUwF56HT7b8M,"The Bicycle Music Company",11B,USWU30200104
+8,"These Kids (radio edit)","Joel Turner",40,132,"","","Joel Turner & The Modern Day Poets",2004-01-01,04:00,75,85,11,0,67,0,10,-5,E minor,4,2021-11-04,0rYA2OJ81pKaPgjMweCipO,"Dream Dealers",9A,AUDM00500001
+9,"Shut Up","Black Eyed Peas",0,113,"","","Elephunk",2003-00-00,04:56,80,72,6,0,57,20,20,-4,D,4,2021-11-04,6diFcq4UcYDlBeRVqOCWY1,"A&M",10B,USIR10311895
+10,"Suga Suga","Baby Bash, Frankie J",73,82,"","","Tha Smokin' Nephew",2003-01-01,03:59,66,75,69,0,54,20,0,-3,F minor,4,2021-11-04,6Nq5lE0CeOAAAqN4qhkbZU,"Universal Records",4A,USUR10300765
+11,"My Band","D12",70,120,"","","D-12 World",2004-01-01,04:58,85,85,50,0,84,0,10,-3,C♯/D♭ minor,4,2021-11-04,4XHQyvbrBsQaaBUW1VvmsL,"Polydor Associated Labels",12A,USIR10400103
+12,"Behind Blue Eyes","Limp Bizkit",78,120,"nu metal, rap metal, alternative metal, rap rock","Metal, Rock, Hip Hop","Results May Vary",2003-01-01,04:29,60,49,50,0,9,0,10,-7,G,4,2021-11-04,1MTQHCpraD4S8g5PAFKzoj,"Limp Bizkit / Interscope",9B,USIR10312186
+13,"She Will Be Loved","Maroon 5",73,102,"pop","Pop","Songs About Jane",2002-06-25,04:17,71,71,6,0,54,0,10,-6,C minor,4,2021-11-04,7sapKrjDij2fpDVj0GxP66,"Interscope Records*",5A,USJAY0300082
+14,"With You","Jessica Simpson",52,94,"","","In This Skin (Deluxe Edition)",2003-00-00,03:11,55,76,9,0,61,10,20,-5,C,4,2021-11-04,7pNJ1T9TGbVbNHKaLhhPri,"Columbia",8B,USSM10308249
+15,"Hey Ya!","Outkast",82,80,"southern hip hop, hip hop","Hip Hop","Speakerboxxx/The Love Below",2003-00-00,03:55,73,97,10,0,97,0,10,-2,E minor,4,2021-11-04,2PpruBYCo4H7WOBJ7Q2EwM,"Arista",9A,USAR10300924
+16,"I Don't Wanna Know (feat. Enya & P. Diddy) - 2016 Remaster","Mario Winans, Enya, Diddy",62,97,"new age, celtic, hip hop, east coast hip hop","Folk, Traditional Music, Hip Hop, New Age","Bad Boy 20th Anniversary Box Set Edition",2016-08-12,04:17,83,52,35,0,40,0,10,-5,B minor,4,2021-11-04,2yr2HnFYl7XvqJk4fXoQBt,"Rhino Atlantic",10A,USRH11603418
+17,"Angel Eyes","Paulini",21,128,"","","One Determined Heart",2004-07-23,04:01,48,58,54,0,21,0,10,-5,F,4,2021-11-04,7DY005dTZhZjHBCpi09apk,"Columbia",7B,AUSM00400086
+18,"Here Without You","3 Doors Down",79,144,"post-grunge","Rock","Away From The Sun",2002-11-12,03:58,56,53,5,0,23,0,20,-7,A#/B♭ minor,4,2021-11-04,3NLrRZoMF0Lx6zTlYqeIo4,"Universal Records",3A,USUR10200764
+19,"Four to the Floor","Starsailor",52,93,"britpop","Pop, Rock","Silence Is Easy",2003-09-15,03:53,53,83,3,0,74,0,0,-5,C♯/D♭ minor,4,2021-11-04,4x5WbFaTTCexxBKbUyfBcG,"Parlophone UK",12A,GBAYE0301040
+20,"Out Of The Blue","Delta Goodrem",30,76,"","","Mistaken Identity",2004-11-05,04:25,45,71,20,0,24,0,10,-4,F#/G♭,4,2021-11-04,1XfmLcVCKlRWbivOmgd3pU,"Epic",2B,AUSM00400246
+21,"So Beautiful - Single Version","Pete Murray",51,83,"","","Feeler",2003-00-00,04:39,50,44,45,0,34,0,10,-10,G minor,4,2021-11-04,5fnP8bD1LwxYVqoMPOW2Se,"Columbia",6A,AUSM00300316
+22,"Scar","Missy Higgins",58,92,"","","The Sound Of White",2004-01-01,03:33,65,79,38,0,83,0,20,-6,C,4,2021-11-04,0Xxww5aUyamJlEm8GkP21i,"Universal Music Australia Pty. Ltd.",8B,USWB10401947
+23,"Leave (Get Out)","JoJo",4,87,"","","JoJo",2004-06-22,04:02,70,56,16,0,46,20,0,-7,F,4,2021-11-04,3DOxMCaNBNvnjSzpHUSjE3,"Blackground Records, LLC",7B,USUYG1353158
+24,"Broken","Seether",57,124,"post-grunge, alternative metal, rock","Metal, Rock","Disclaimer",2002-01-01,04:17,67,48,2,0,18,0,0,-6,E minor,4,2021-11-04,5nakPOknHu3XkeeHoVvhCd,"Fantasy Records",9A,USWU30200027
+25,"Listen With Your Heart","Casey Donovan",23,118,"","","For You",2004-12-10,04:01,54,51,82,0,15,0,10,-5,F,4,2021-11-04,1BsIcp6FTuM8jSt4NYe5TW,"Sony Music Entertainment",7B,AUBM00449001
+26,"What You Waiting For?","Gwen Stefani",63,136,"","","Love. Angel. Music. Baby. (Deluxe Version)",2004-11-12,03:41,68,95,5,0,73,0,30,-3,F,4,2021-11-04,7bZsx7Zif6FIhrcZrh0LVm,"Interscope",7B,USIR10400692
+27,"F.U.R.B. (F U Right Back)","Frankee",52,141,"","","F.U.R.B. (F U Right Back)",2004-10-24,03:21,79,64,10,0,60,10,20,-3,G#/A♭,4,2021-11-04,35Y18Dv2pAiJ7v0Zou9gxI,"Marro Records",4B,USWR30432403
+28,"Yeah! (feat. Lil Jon & Ludacris)","USHER, Lil Jon, Ludacris",85,105,"r&b, crunk, southern hip hop","Hip Hop, R&B","Confessions (Expanded Edition)",2004-03-23,04:10,89,79,2,0,58,10,0,-5,D,4,2021-11-04,5rb9QrpfcKFHM1EUbSIurX,"LaFace Records",10B,USAR10301423
+29,"Turn Me On","Kevin Lyttle",62,106,"soca, dancehall","Reggae, Latin","Turn Me On (Online Music)",2004-03-30,03:12,68,68,4,0,88,0,0,-7,A,4,2021-11-04,0RmXtDH1cBMGImRrmn5xL6,"Atlantic Records",11B,USAT20400415
+30,"Predictable","Delta Goodrem",37,105,"","","Innocent Eyes",2003-03-21,03:38,74,61,46,0,64,0,10,-6,E minor,4,2021-11-04,12VzulX6U34ea0LXm6zGGf,"Epic",9A,AUSM00300028
+31,"Burn","USHER",75,120,"r&b","R&B","Confessions (Expanded Edition)",2004-03-23,03:51,80,48,31,0,69,10,10,-7,C♯/D♭,4,2021-11-04,7z3N2W7Xz1t2G2sAO8wFVH,"LaFace Records",3B,USAR10400974
+32,"Perfect","Simple Plan",72,156,"pop punk, punk, emo","Rock, Pop","No Pads, No Helmets...Just Balls (15th Anniversary Tour Edition)",2002-03-19,04:37,49,67,3,0,56,0,10,-5,D#/E♭,4,2021-11-04,4j3X4KX8rURekAVIFUhI23,"Rhino Atlantic",5B,USAT20200143
+33,"Trick Me","Kelis",1,107,"","","Tasty",2003-12-05,03:26,97,72,4,0,96,10,30,-3,C♯/D♭ minor,4,2021-11-04,3aImJnJlAgcE7bJ1NxthGt,"Virgin Records",12A,USAR10301288
+34,"Drive","Shannon Noll",38,126,"","","That's What I'm Talking About",2004-02-02,03:58,60,89,0,0,83,0,0,-4,A,4,2021-11-04,4NBASiUXghS8tKTDYDbxtP,"BMG Music",11B,AUBM00447804
+35,"Tipsy - Club Mix","J-Kwon",53,93,"","","Tipsy",2001-01-01,04:07,93,74,7,0,65,30,0,-6,A minor,4,2021-11-04,6fqqAsCYfDOtXAD8Ydo06K,"So So Def",8A,USAR10301217
+36,"Just Lose It","Eminem",69,121,"rap, hip hop","Hip Hop","Encore (Deluxe Version)",2004-11-12,04:08,94,63,6,0,96,0,20,-4,G#/A♭,4,2021-11-04,0qcjuYtMWhBjXg0Xwt5SzS,"Eminem Catalog PS",4B,USIR10400682
+37,"When The War Is Over","Cosima De Vito",21,87,"","","Cosima",2004-10-01,03:48,56,44,46,0,13,0,10,-6,B,4,2021-11-04,6IBlag2e4FZtI7iECkyhCE,"Cosima De Vito",1B,AUQOZ2000002
+38,"Toxic","Britney Spears",85,143,"pop","Pop","In The Zone",2003-11-13,03:18,77,84,2,3,92,10,20,-4,F minor,4,2021-11-04,6I9VzXrHxO9rA9A5euc8Ak,"Jive",4A,USJI10301005
+39,"One Call Away","Chingy, Jason Weaver",63,163,"crunk","Hip Hop","Jackpot",2003-01-01,04:36,77,82,9,0,96,10,20,-6,E minor,4,2021-11-04,0UNTBB02C1aB55Fu4H63qd,"Capitol Records",9A,USCA20300286
+40,"My Place","Nelly, Jaheim",62,163,"r&b, neo soul, quiet storm","R&B","Suit",2004-09-14,05:36,60,64,5,0,64,0,10,-4,C♯/D♭ minor,4,2021-11-04,1NAyvpW70a9lxY0YlLWFV4,"Motown",12A,USUR10400516
+41,"Roses","Outkast",71,109,"southern hip hop, hip hop","Hip Hop","Speakerboxxx/The Love Below",2003-00-00,06:09,75,71,5,0,51,0,10,-6,C,4,2021-11-04,6bUNEbXT7HovLW6BgPCBsb,"Arista",8B,USAR10301000
+42,"Hey Mama","Black Eyed Peas",0,100,"","","Elephunk",2003-00-00,03:34,87,88,11,0,94,20,60,-6,B minor,4,2021-11-04,6W3c6pmDgT04I0Nk87JFyK,"A&M",10A,USIR10311890
+43,"Lose My Breath","Destiny's Child",66,119,"","","Destiny Fulfilled",2004-00-00,04:02,81,90,1,22,55,0,10,-6,C♯/D♭,4,2021-11-04,2n4uOdMHzEvcZ0KP7iQnay,"Sony Urban Music/Columbia",3B,USSM10412855
+44,"Let's Get It Started - Spike Mix","Black Eyed Peas",2,105,"","","Elephunk",2003-00-00,03:37,79,79,10,0,78,10,20,-2,D,4,2021-11-04,3qK8x4GZcIkzTz9JEqvIF5,"A&M",10B,USIR10400364
+45,"Be Faithful","Fatman Scoop",24,101,"","","Fatman Scoop  Hottest Featured Artist Recordings ",2008-10-10,03:34,70,89,3,0,68,30,20,-3,G,4,2021-11-10,20kZh1PqntWs5pruQVb6vj,"AV8 Records",9B,USTC60898301
+46,"Call on Me","Eric Prydz",59,126,"","","Call On Me (Remixes)",2004-09-13,07:34,64,79,0,10,20,30,40,-9,G#/A♭ minor,4,2021-11-10,1As4KC3YYpu89aBt7EqL2m,"Pryda Presents",1A,GBCEN0400131
+47,"All I Need Is You","Guy Sebastian",28,105,"","","Twenty Ten",2010-11-19,04:05,78,65,23,0,75,0,10,-6,A,4,2021-11-10,3KDxvgj2KJfJDZMPQu1I66,"Sony Music Entertainment",11B,AUBM00347706
+48,"Car Wash - From  Shark Tales ","Movie Sound Unlimited",12,115,"","","Greatest Themes & Songs from Animated Movies",2019-12-22,03:50,82,81,23,0,93,10,10,-4,C minor,4,2021-11-10,0biJ5RPSXcwhn8jIrL7SZG,"Green Screen Records",5A,QMVRR1901656
+49,"These Words","Natasha Bedingfield",67,97,"","","Unwritten",2004-08-30,03:36,73,64,3,0,93,0,0,-7,F,4,2021-11-10,6MFQeWtk7kxWGydnJB2y36,"Sony Music CG",7B,GBARL0400683
+50,"Thank You - Single Edit","Jamelia",0,92,"","","Thank You",2003-06-30,03:14,45,73,34,0,78,20,30,-6,D,4,2021-11-10,57Cs3ecsNwPM3XZRW7GYq2,"Woah Dad!",10B,GBAYE0302265
+51,"Sick and Tired","Anastacia",59,100,"","","Pieces of A Dream",1999-00-00,03:32,60,87,1,0,47,0,20,-5,C,4,2021-11-10,54s027DgaSJlvp1q2sdzTa,"Epic/Daylight",8B,USSM10401046
+52,"Push Up","Freestylers",49,135,"big beat, breakbeat, dubstep","Electronic","Raw As F**k",2004-03-26,04:39,84,78,1,1,96,0,0,-5,C,4,2021-11-10,2PJq8Fr5i2S0OkcmFsTC1P,"Altra Moda Music",8B,NLML61400043
+53,"Somebody to Love - Main Club Mix","Boogie Pimps",41,131,"","","Somebody to Love (Salt Shaker Remix)",2003-04-14,05:12,84,60,2,66,78,0,10,-9,B,4,2021-11-10,50v2JhRDBbQa7TpNIV3zmp,"Superstar Recordings",1B,DEA610300128
+54,"Pieces Of Me","Ashlee Simpson",55,174,"bubblegum pop","Pop","Autobiography",2004-07-20,03:37,51,80,6,0,77,0,10,-4,D,4,2021-11-10,10BwOTqtnekIrXPc5Zh4QC,"Geffen*",10B,USMC10400225
+55,"When You Say You Love Me","Human Nature",19,128,"christmas","Pop","When You Say You Love Me",2004-04-09,04:02,65,70,26,0,89,0,0,-5,A,4,2021-11-10,1gpiDC5mM82mU87vDQGKhr,"Columbia",11B,AUSM00400026
+56,"American Idiot","Green Day",81,186,"punk, pop punk","Pop, Rock","American Idiot",2004-09-21,02:56,38,99,0,0,77,0,30,-2,C♯/D♭,4,2021-11-10,6nTiIhLmQ3FWhvrGafw2zj,"Reprise",3B,USRE10400888
+57,"The Reason","Hoobastank",6,83,"nu metal","Metal, Rock","The Reason (15th Anniversary Deluxe)",2003-12-09,03:52,47,67,1,0,7,0,10,-5,E,4,2021-11-10,77loZpT5Y5PRP1S451P9Yz,"Island Def Jam",12B,USIR20300704
+58,"Naughty Girl","Beyoncé",66,200,"","","Dangerously In Love",2003-06-24,03:28,59,46,24,0,66,10,0,-9,F#/G♭ minor,4,2021-11-10,0YGQ3hZcRLC5YX7o0hdmHg,"Columbia",11A,USSM10305418
+59,"This Love","Maroon 5",86,95,"pop","Pop","Songs About Jane: 10th Anniversary Edition",2002-00-00,03:26,71,86,5,0,81,0,0,-5,F minor,4,2021-11-10,6ECp64rv50XVz93WvxXMGF,"Interscope Records*",4A,USJAY0300080
+60,"Summer Rain","Slinkee Minx",0,130,"","","Electric Dreams",2006-00-00,04:14,67,93,0,16,80,0,10,-6,G minor,4,2021-11-10,08jn5cU454h8B5QcdtpU1O,"Xelon Entertainment",6A,AUCE00500074
+61,"My Happy Ending","Avril Lavigne",72,170,"","","Under My Skin",2004-00-00,04:02,41,94,0,0,74,0,30,-2,D,4,2021-11-10,6sqNctd7MlJoKDOxPVCAvU,"Arista",10B,USAR10400486
+62,"Figured You Out","Nickelback",65,94,"post-grunge, rock","Rock","The Long Road",2003-09-23,03:48,54,87,0,2,73,0,20,-6,A#/B♭,4,2021-11-10,1Yuim9eHBfG8YUJII28XDF,"Roadrunner Records",6B,NLA320320332
+63,"Not In Love","Enrique Iglesias",42,117,"latin pop, latin","Latin, Pop","7",2003-01-01,03:42,75,93,1,0,84,0,0,-4,C minor,4,2021-11-10,3B2km86Z77cAoOr9e5JHEN,"Interscope",5A,USIR10312451
+64,"Baby Boy","Big Brovaz",43,94,"","","Nu Flow",2001-01-01,04:00,71,56,11,0,58,0,0,-9,C♯/D♭,4,2021-11-10,4cVg29xuGui33h60Rumsqk,"Epic",3B,GBBBM0202106
+65,"How Come","D12",57,90,"","","D-12 World",2004-01-01,04:09,75,86,28,0,55,20,10,-2,A,4,2021-11-10,785t3poQsvdkSeH5xGA9R4,"Polydor Associated Labels",11B,USIR10400124
+66,"The Way You Move (feat. Sleepy Brown)","Outkast, Sleepy Brown",73,126,"southern hip hop, hip hop","Hip Hop","Speakerboxxx/The Love Below",2003-00-00,03:54,87,60,13,0,64,0,0,-5,F minor,4,2021-11-10,5z7mYFfhw6N6f23VwrokJD,"Arista",4A,USAR10300967
+67,"Learn To Fly","Shannon Noll",29,134,"","","That's What I'm Talking About",2004-02-02,04:12,53,63,14,0,26,0,0,-5,D#/E♭,4,2021-11-10,1Mw2BnEixPT4tJbSffXyEL,"BMG Music",5B,AUBM00447809
+68,"Out With My Baby","Guy Sebastian",23,101,"","","Beautiful Life",2004-10-17,03:39,80,76,10,0,42,10,20,-4,A,4,2021-11-10,6tq3ca6mRbBvW5tTlbjRsZ,"BMG Music",11B,AUBM00447705
+69,"I Like That","Houston, Chingy, Nate Dogg, I-20",60,107,"crunk, g-funk, west coast hip hop, southern hip hop","Hip Hop, R&B","It's Already Written",2004-01-01,03:56,80,50,2,0,39,10,10,-4,A#/B♭ minor,4,2021-11-10,4MMqj7HaLL8BphbBZnlsdq,"Capitol Records",3A,USCA20400614
+70,"Holidae In","Chingy, Ludacris, Snoop Dogg",57,153,"crunk, southern hip hop, g-funk, west coast hip hop, gangster rap, hip hop, old school hip hop, rap","Hip Hop, R&B","Jackpot",2003-01-01,05:14,81,79,9,0,95,10,0,-6,G,4,2021-11-10,0FmCLEHfINGqwlyzvklNqy,"Capitol Records",9B,USCA20300295
+71,"Everytime","Britney Spears",66,110,"pop","Pop","In The Zone",2003-11-13,03:50,40,28,97,0,11,0,10,-13,D#/E♭,4,2021-11-10,0dRhSF9LV0HR8Jwd3MMMKJ,"Jive",5B,USJI10301010
+72,"I Miss You","blink-182",69,110,"pop punk, punk, rock, skate punk, emo","Rock, Pop","blink-182",2003-11-01,03:47,42,71,0,0,59,0,0,-8,B,4,2021-11-10,1AdYZ6X00nXmO613Y7GJOl,"Geffen",1B,USMC10346123
+73,"Spider-Man Theme - Junkie XL Remix","Michael Bublé, Junkie XL",42,89,"christmas, big beat, soundtrack","Electronic, Pop, Classical, Easy Listening","Spider-Man Theme / Sway Remixes",2003-02-11,03:03,39,83,14,0,50,10,10,-4,A#/B♭,4,2021-11-10,24I8lYyoECAzoPpxAaQHFV,"143/Reprise",6B,USRE10400842
+74,"Welcome to My Life","Simple Plan",70,173,"pop punk, punk, emo","Rock, Pop","Still Not Getting Any...",2004-10-25,03:26,42,86,1,0,49,10,0,-5,C♯/D♭,4,2021-11-10,10rChmECwPcvTTj4w07hq4,"143/Atlantic Entertainment",3B,USAT20402001
+75,"Sundown","Gordon Lightfoot",72,106,"folk rock, folk, singer-songwriter, yacht rock","Folk, Rock, Pop","Sundown",1974-00-00,03:33,79,43,33,0,75,0,0,-15,B,4,2021-11-10,0SjnBEHZVXgCKvOrpvzL2k,"Rhino/Warner Records",1B,USRE10901178
+76,"Accidentally In Love - From  Shrek 2  Soundtrack","Counting Crows",72,138,"","","Accidentally In Love (From Shrek 2 S/T)",2004-01-01,03:08,56,93,5,0,78,0,0,-4,G,4,2021-11-10,2Y6uY65ZwKl9WbVOvKyZg6,"Dreamworks - Shrek II",9B,USIR10400291
+77,"Amazing","George Michael",58,128,"","","Patience",2004-03-15,04:25,81,75,9,0,88,0,10,-7,A#/B♭ minor,4,2021-11-10,0hsrqeudoR9Kymm7RNiVoq,"Sony Music UK",3A,GBBBN0300681
+78,"Take Me To The Clouds Above - LMC Vs. U2 / Radio Edit","LMC, U2",60,129,"rock","Rock","Take Me To The Clouds Above (LMC Vs. U2 / Remixes)",2004-01-26,02:51,67,91,0,3,67,0,10,-5,F#/G♭,4,2021-11-10,4zrl5YGi2OqMar45Kdn4BM,"All Around The World",2B,GBCFZ0400232
+79,"It's My Life","No Doubt",64,126,"","","It's My Life",2003-01-01,03:46,61,74,0,0,78,0,30,-5,G#/A♭ minor,4,2021-11-10,1OutzYv6YiN93lrT3pJsWR,"Interscope",1A,USIR10312339
+80,"The Prayer","Anthony Callea",31,139,"","","Anthony Callea",2005-00-00,04:15,22,46,77,0,11,0,0,-5,A#/B♭,4,2021-11-10,2r9LMUnfsxtDqIZF8ByZ8n,"BMG Music",6B,AUBM00448803
+81,"Pop!ular","Darren Hayes",23,127,"","","The Tension And The Spark",2004-09-13,03:53,78,57,1,0,85,0,20,-5,G#/A♭,4,2021-11-10,3wpnNZWp8uyVlNBPi6T3zH,"Columbia",4B,USSM10405950
+82,"Bounce - Original Version","Sarah Connor",0,95,"german pop, christmas","Pop","Unbelievable",2002-01-01,04:11,77,83,12,0,93,10,0,-5,C♯/D♭ minor,4,2021-11-10,0St3qGRbDW3LMw7lMpzTbA,"X-cell Records",12A,DEE860201044
+83,"Tilt Ya Head Back - Album Version / Explicit","Nelly, Christina Aguilera",38,116,"","","Sweat",2004-11-14,04:13,84,73,3,0,73,10,20,-6,A#/B♭ minor,4,2021-11-10,2VJg6kEJXgeBNm0xnl7xYk,"Motown",3A,USUR10400764
+84,"Confessions Part II","USHER",71,138,"r&b","R&B","Confessions (Expanded Edition)",2004-03-23,03:31,85,47,6,0,70,10,0,-8,C♯/D♭,4,2021-11-10,7wBThXx7BGZHJJ3aN3OPvv,"LaFace Records",3B,USAR10400973
+85,"Ms. Vanity","Rob Mills",17,116,"","","Up All Night",2004-06-14,03:45,57,75,0,1,59,0,0,-7,G,4,2021-11-10,3icdUKZ8qXTEqRJMa9YlTp,"BMG Music",9B,AUBM00448501
+86,"Look What You've Done","Jet",0,74,"","","Get Born (Deluxe Edition)",2003-09-14,03:50,40,54,39,0,33,0,10,-7,C,4,2021-11-10,7x12Bz97YjeFEdrOkMlw5e,"Bloodlines",8B,USEE10340563
+87,"In the Shadows","The Rasmus",75,106,"finnish rock","Rock","Dead Letters",2003-03-24,04:17,60,80,0,0,75,0,40,-4,D,4,2021-11-10,1fr92Vupmcs2vgLMFVQ7rd,"Playground Music",10B,SEVJH0201601
+88,"Breakaway","Kelly Clarkson",70,160,"christmas","Pop","Breakaway",2004-00-00,03:57,27,72,4,0,39,0,10,-4,A minor,3,2021-11-10,4PFAm88FBkY7IFtvCaGctZ,"RCA Records Label",8A,GBCTA0400230
+89,"The Trouble With Love Is","Kelly Clarkson",37,184,"christmas","Pop","Thankful",2003-09-29,03:41,48,62,8,0,27,0,0,-6,A#/B♭,3,2021-11-10,7p9hpeiFig1t6TOTcyGDZm,"RCA Records Label",6B,USRC10300784
+90,"My Prerogative","Britney Spears",56,111,"pop","Pop","Greatest Hits: My Prerogative",2004-11-08,03:33,75,94,1,0,62,10,10,-4,A#/B♭ minor,4,2021-11-10,2JxftzENN2rhpXxnOmtQBR,"Jive",3A,USJI10400852
+91,"She Wants To Move","N.E.R.D",56,115,"","","Fly Or Die",2004-01-01,03:33,77,85,0,0,80,0,20,-5,F,4,2021-11-10,4Vqd7MuPVrciqRS3EzhKWb,"Virgin Records",7B,USVI20400016
+92,"Me Against the Music (feat. Madonna) - LP Version / Video Mix","Britney Spears, Madonna",60,120,"pop","Pop","In The Zone",2003-11-13,03:43,80,84,32,0,85,0,20,-7,F#/G♭ minor,4,2021-11-10,7mS8RbJji2UZAaguRGsOCH,"Jive",11A,USJI10300966
+93,"It’s Too Late","Evermore",51,139,"","","Dreams",2004-09-27,03:55,54,72,5,0,62,0,10,-5,G#/A♭ minor,4,2021-11-10,0eDLgvIZyDgaI3L2mDa9z7,"Evermore Music",1A,AUWA00413730
+94,"Zebra","John Butler Trio",54,79,"","","Sunrise Over Sea",2004-08-03,03:57,61,64,13,7,75,0,10,-7,E,4,2021-11-10,7IahivnWF9l1W8DSBQe3Xv,"Jarrah Records",12B,AUFC00400100
+95,"Don't Tell Me","Avril Lavigne",60,144,"","","Under My Skin",2004-00-00,03:22,52,80,0,0,48,0,30,-3,E,4,2021-11-10,0dEQaNYfp5G7Sflek2Qnde,"Arista",12B,USAR10400119
+96,"Take My Breath Away","Jessica Simpson",41,100,"","","In This Skin (Deluxe Edition)",2003-00-00,03:15,57,61,25,0,41,0,20,-6,G,4,2021-11-10,7AHZb0GnILBBitj0MxObO5,"Columbia",9B,USSM10400631
+97,"I Am","Killing Heidi",38,93,"","","Killing Heidi",2004-08-30,03:27,50,95,2,0,72,0,10,-2,A#/B♭,4,2021-11-10,0lCj03FXDWpXu6smlujEey,"Universal Music Australia Pty. Ltd.",6B,AUSM00400084
