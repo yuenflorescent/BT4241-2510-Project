@@ -23,10 +23,8 @@ try:
         
         wait = WebDriverWait(driver, 10)
         
-        # Wait for the list items to load (adjust selector if needed)
         wait.until(EC.presence_of_element_located((By.CSS_SELECTOR, "#tb_list > div.tb_list.type02.d_song_list")))
         
-        # Parse first-half (initially visible)
         html = driver.page_source
         soup = BeautifulSoup(html, "html.parser")
         
@@ -40,14 +38,8 @@ try:
                 title_tag = info.css.select_one("td:nth-child(4) > div > div > div.ellipsis.rank01 > span > span > div").get_text()
             songs.append(artist_tag + " " + title_tag)
         
-        # print("First half (1-50):", len(songs), songs)
-        
-        # 2. Toggle / click to load the second half (60–100)
-        # This depends on how the Melon page implements the toggle.
-        # You'll need to inspect and maybe click a "More" button, or a pagination link.
-        # Here's a generic idea:
+
         toggle_button = driver.find_element(By.CSS_SELECTOR, "#tb_list > div.paginate.chart_page > span > a")
-        # NOTE: the above selector is just an example — you should inspect the real button.
         toggle_button.click()
         
         # Wait for new elements
@@ -76,8 +68,6 @@ try:
     with open("korean_charts_artists_and_songs.txt", "w") as text_file:
         text_file.write(txt_output)
     print("done")
-    # query phase
-# The code snippet you provided is using the Spotipy library to interact with the Spotify API. Here's
-# a breakdown of what it's doing:
+
 finally:
     driver.quit()
